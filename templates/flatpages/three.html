@@ -1,0 +1,26 @@
+{% extends 'flatpages/default.html' %}
+ 
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+ 
+{% block content %}
+    <header class="mb-4" style = 'width: 800px'>
+        <h2 class="fw-bolder mb-1">{{ flatpage.content }}</h2>
+    </header>
+    <section class="mb-5">
+        <div class="card bg-light" style = 'width: 800px'>
+            <div class="card-body">
+                <!-- Parent comment-->
+                <div class="flex-shrink-0" align="center"><img class="rounded-circle" style = 'width: 700px' src="https://avatars.dzeninfra.ru/get-zen_doc/230574/pub_5b32a01d5d5ea900a9aa8963_5b32a021b151b800aa2a0ee8/scale_1200" alt="..." /></div>
+            </div>
+            <div align="center">
+                <p style = 'width: 700px' align="justify">Жил в XVIII-XIX веках такой любопытный человек - Тимоти Декстер.
+                    Был он весьма экстравагантен в своих поступках. Однажды Дектер написал мемуары с большим количеством
+                    ошибок и отсутствием всякой пунктуации. В ответ на возмущения читателей во втором издании книги он
+                    добавил специальную страницу со знаками препинания, попросив читателей расставить их в тексте на своё усмотрение.
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

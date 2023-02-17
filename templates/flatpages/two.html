@@ -1,0 +1,28 @@
+{% extends 'flatpages/default.html' %}
+ 
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+ 
+{% block content %}
+    <header class="mb-4" style = 'width: 800px'>
+        <h2 class="fw-bolder mb-1">{{ flatpage.content }}</h2>
+    </header>
+    <section class="mb-5">
+        <div class="card bg-light" style = 'width: 800px'>
+            <div class="card-body">
+                <!-- Parent comment-->
+                <div class="flex-shrink-0" align="center"><img class="rounded-circle" style = 'width: 700px' src="https://r1.mt.ru/r23/photoF3EB/20727227707-0/jpg/bp.jpeg" alt="..." /></div>
+            </div>
+            <div align="center">
+                <p style = 'width: 700px' align="justify">В 1945 году советские школьники подарили американскому послу
+                    деревянное панно из ценных пород дерева с изображением герба США. Никто не подозревал, что в панно
+                    было предварительно вмонтировано подслушивающее устройство,  разработанное Львом Терменом. «Жучок»
+                    был так удачно спрятан, что американские спецслужбы ничего не заметили, а КГБ 8 лет прослушивал разговоры
+                    в рабочем кабинете посла. После обнаружения устройство было представлено в ООН в качестве доказательства
+                    разведывательной деятельности СССР, однако принцип его действия ещё несколько лет оставался неразгаданным.
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

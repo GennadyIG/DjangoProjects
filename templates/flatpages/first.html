@@ -1,0 +1,28 @@
+{% extends 'flatpages/default.html' %}
+ 
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+ 
+{% block content %}
+    <header class="mb-4" style = 'width: 800px'>
+        <h2 class="fw-bolder mb-1">{{ flatpage.content }}</h2>
+    </header>
+    <section class="mb-5">
+        <div class="card bg-light" style = 'width: 800px'>
+            <div class="card-body">
+                <!-- Parent comment-->
+                <div class="flex-shrink-0" align="center"><img class="rounded-circle" style = 'width: 700px' src="https://asset-a.grid.id/crop/0x0:0x0/750x500/photo/2019/11/16/2287076675.jpg" alt="..." /></div>
+            </div>
+            <div align="center">
+                <p style = 'width: 700px' align="justify">На архипелаге Шпицберген есть город Лонгйир — самое северное в мире поселение с населением свыше тысячи человек.
+                    В городе действует любопытные законы. Например, есть запрет на содержание кошек, ограничение количества алкоголя,
+                    которое человек может покупать ежемесячно и требование, чтобы все люди, выходящие на улицу, носили винтовку.
+                    Кроме того,если кого-нибудь сразила тяжкая болезнь или произошёл несчастный случай с потенциально летальным исходом,
+                    пациенту запрещено умирать на территории города. Эти вынужденные меры вызваны тем, что в условиях вечной мерзлоты
+                    тела после погребения совершенно не разлагаются и привлекают к себе внимание таких хищников, как белые медведи.
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
